@@ -68,7 +68,9 @@ body {
 }
 
 span {
-	padding: 5px;
+	padding: 2px;
+	background-color: grey;
+	border-bottom: 2px white solid;
 }
 
 .hadouken {
