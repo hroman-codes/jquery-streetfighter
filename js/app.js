@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('.ryu-still').show();
 	})
 	.mousedown(function() {
-        playHadouken();
+        playHadouken()
 		$('.ryu-all').hide();
 		$('.ryu-throwing').show();
 		$('.hadouken').finish().show().animate(
@@ -32,8 +32,7 @@ function playHadouken() {
     }
 
 $(document).keydown(function(event) {
-
-    if ( event.keyCode == 88 || 99 ){ 
+    if ( event.keyCode == 88 || 99 ){
         $('.ryu-all').hide();
         $('.ryu-cool').show();
     }
@@ -44,3 +43,13 @@ $(document).keydown(function(event) {
             $('.ryu-still').show();
         }
 });
+
+$(document).ready(function(event) {
+	// hide the toggle by default
+	$('#instructions').hide();
+	// when i click the instructions button show instructions
+	$('#button').click(function(event) {
+		$('#instructions').slideToggle('slow');
+		console.log('button was clicked');
+	})
+})

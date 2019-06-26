@@ -2,6 +2,26 @@ body {
 	background-color: black;
 }
 
+#button{
+	background-color: red;
+	box-shadow: 0 5px 0 darkred;
+	border: 0px;
+	color: white;
+	padding: 1em 1.5em;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#button.hover {
+	background-color: #ce0606;
+}
+
+#button.active {
+	box-shadow: none;
+	top: 5px;
+}
+
 .main {
 	background-color: white;
 	height: 31.25em;
@@ -47,6 +67,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+span {
+	padding: 5px;
+}
+
 .hadouken {
 	background-image: url('../images/hadouken.gif');
 	width: 9.75em;
@@ -58,6 +82,27 @@ body {
 	top: 10.43em;
 	left: 33.87em;
 }
-/** {
-	outline: red 1px solid;
-}*/
+
+.instructColor {
+	color: white;
+	padding-top: 30px;
+	padding-left: 10px;
+}
+
+.instructColor > h1 {
+	padding-bottom: 10px;
+}
+
+.instructions {
+	color: white;
+	font-size: 40px;
+	padding-top: 20px;
+}
+
+li {
+	padding-top: 10px;
+}
+
+h1 {
+	font-size: 30px;
+}

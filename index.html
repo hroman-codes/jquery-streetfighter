@@ -5,12 +5,6 @@
 	<title></title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
-	<!-- <script src="http://code.jquery.com/jquery.min.js"></script> -->
-	<!-- <script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
-	<script src="js/app.js"></script> -->
 </head>
 <body>
 	<div class="main">
@@ -23,6 +17,20 @@
 		</div>
 		<audio id="hadouken-sound" src="sound/hadouken.mp3">
 	</div>
+
+	<!-- This div allows you to toggle instructions -->
+	<div class="instructColor">
+		<h1>Welcome to Ryu jQuery fighting game</h1>
+		<input id="button" type="button" value="Instructions" />
+		<div class="instructText">
+			<!-- <h1 >Welcome to Ryu jQuery fighting game</h1> -->
+				<ul id="instructions">
+					<li><span>1</span>Click on Ryu to throw a Hadouken</li>
+					<li><span>2</span>Press any key to see Ryu cool pose</li>
+				</ul>
+		</div>
+	</div>
+
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
